@@ -20,19 +20,24 @@ body {
   margin: 0 auto;
 }
 
+.main {
+  display: flex;
+  align-items: center;
+}
+
 .header__wrapper {
   margin-top: 50px;
   height: 646px;
   background: #161616;
   border-radius: 30px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .header__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
   padding: 7%;
 }
 
@@ -86,7 +91,7 @@ body {
 }
 
 .header__image {
-  flex: 1;
+  position: relative;
 }
 
 .header__image img {
@@ -317,9 +322,9 @@ hr {
   }
 
   .header__wrapper {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     padding: 3%;
-    /* width: 334px; */
+    width: 334px;
     height: 472px;
   }
 
