@@ -28,7 +28,7 @@ header {
 .header__wrapper {
   margin-top: 50px;
   height: 646px;
-  background: #161616;
+  background: #142d4c;
   border-radius: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -69,9 +69,14 @@ header {
   gap: 10px;
   width: 187px;
   height: 56px;
-  background: #dd0000;
+  background: #f7be16;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.header__btn:hover {
+  transition: 0.5s all ease-in-out;
+  transform: scale(1.1);
 }
 
 .header__btn a {
@@ -114,7 +119,7 @@ header {
 .main__button-section {
   width: 312px;
   height: 312px;
-  background: #161616;
+  background: #142d4c;
   border-radius: 10px;
 }
 
@@ -137,11 +142,15 @@ header {
   border-radius: 10px;
 }
 
-.main__button-section .blog {
+.main__button-section .selected {
   width: 252px;
   height: 64px;
-  background: #dd0000;
+  background: #f7be16;
   border-radius: 10px;
+}
+
+.main__button-section .selected a {
+  color: #ffffff;
 }
 
 .main__button-section a {
@@ -253,7 +262,7 @@ main .view__btn {
   gap: 10px;
   width: 135px;
   height: 47px;
-  background: #dd0000;
+  background: #f7be16;
   border-radius: 5px;
   margin-top: 50px;
   display: flex;
@@ -278,7 +287,7 @@ main .view__btn a {
 footer {
   width: 100%;
   height: 480px;
-  background: #161616;
+  background: #142d4c;
 }
 
 .footer__container {
@@ -323,6 +332,11 @@ hr {
   color: #b9b9b9;
 }
 
+.footer__menu ul > li a:hover {
+  color: #f7be16;
+  transition: 0.3s all ease-in-out;
+}
+
 .social-icon {
   display: flex;
   gap: 30px;
@@ -338,7 +352,43 @@ hr {
   gap: 20px;
 }
 
+.social-icon a:hover {
+  color: #f7be16;
+  transition: 0.3s all ease-in-out;
+  transform: scale(1.1);
+}
+
 /* footer section end */
+
+/* upcoming page style start */
+
+.upcoming__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upcoming__card__title {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #161616;
+}
+
+.upcoming__card__time {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4d4d4d;
+}
+
+/* upcoming page style end */
 
 /* media queries for mobile */
 
