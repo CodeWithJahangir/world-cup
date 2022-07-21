@@ -396,6 +396,7 @@ hr {
 @media only screen and (max-width: 576px) {
   .container {
     display: flex;
+    justify-content: center;
   }
 
   .header__wrapper {
